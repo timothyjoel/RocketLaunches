@@ -28,7 +28,6 @@
 		814ED8E22990496B0070D500 /* LaunchProgram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814ED8E12990496B0070D500 /* LaunchProgram.swift */; };
 		814ED8E42990497D0070D500 /* Rocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814ED8E32990497D0070D500 /* Rocket.swift */; };
 		814ED8EB29904A360070D500 /* SpaceDevsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814ED8EA29904A360070D500 /* SpaceDevsService.swift */; };
-		814ED8EE29904EFF0070D500 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 814ED8ED29904EFF0070D500 /* Swinject */; };
 		814ED8F0299084A40070D500 /* Date+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814ED8EF299084A40070D500 /* Date+Ext.swift */; };
 		814ED8FF29908A320070D500 /* CustomScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814ED8FE29908A320070D500 /* CustomScrollView.swift */; };
 		814ED90129908A790070D500 /* ChildViewSizeReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814ED90029908A790070D500 /* ChildViewSizeReader.swift */; };
@@ -97,7 +96,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				814ED8EE29904EFF0070D500 /* Swinject in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,7 +268,6 @@
 			);
 			name = "Neontri-Space-Challenge";
 			packageProductDependencies = (
-				814ED8ED29904EFF0070D500 /* Swinject */,
 			);
 			productName = NeontriRecApp;
 			productReference = 814ED889299040920070D500 /* Neontri-Space-Challenge.app */;
@@ -345,7 +342,6 @@
 			);
 			mainGroup = 814ED880299040920070D500;
 			packageReferences = (
-				814ED8EC29904EFF0070D500 /* XCRemoteSwiftPackageReference "Swinject" */,
 			);
 			productRefGroup = 814ED88A299040920070D500 /* Products */;
 			projectDirPath = "";
@@ -739,25 +735,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		814ED8EC29904EFF0070D500 /* XCRemoteSwiftPackageReference "Swinject" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Swinject/Swinject";
-			requirement = {
-				branch = master;
-				kind = branch;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		814ED8ED29904EFF0070D500 /* Swinject */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 814ED8EC29904EFF0070D500 /* XCRemoteSwiftPackageReference "Swinject" */;
-			productName = Swinject;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 814ED881299040920070D500 /* Project object */;
 }
