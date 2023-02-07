@@ -1,0 +1,763 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8145544A2992F9C9002A6EB0 /* Neontri_Space_ChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814554492992F9C9002A6EB0 /* Neontri_Space_ChallengeTests.swift */; };
+		8145544C2992FD6E002A6EB0 /* LaunchInfoSectionRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8145544B2992FD6E002A6EB0 /* LaunchInfoSectionRow.swift */; };
+		814554502992FDDF002A6EB0 /* Publisher+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8145544F2992FDDF002A6EB0 /* Publisher+Ext.swift */; };
+		814554522992FE16002A6EB0 /* URLSession_EraseDataPublisher+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814554512992FE16002A6EB0 /* URLSession_EraseDataPublisher+Ext.swift */; };
+		814554542993000C002A6EB0 /* PhotoPlaceholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814554532993000C002A6EB0 /* PhotoPlaceholder.swift */; };
+		814554572993079A002A6EB0 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814554562993079A002A6EB0 /* String+Ext.swift */; };
+		814ED88D299040920070D500 /* NeontriSpaceChallengeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814ED88C299040920070D500 /* NeontriSpaceChallengeApp.swift */; };
+		814ED88F299040920070D500 /* LaunchesListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814ED88E299040920070D500 /* LaunchesListScreen.swift */; };
+		814ED891299040960070D500 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 814ED890299040960070D500 /* Assets.xcassets */; };
+		814ED894299040960070D500 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 814ED893299040960070D500 /* Preview Assets.xcassets */; };
+		814ED8CF299045910070D500 /* BaseAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814ED8BF299045910070D500 /* BaseAPI.swift */; };
+		814ED8D0299045910070D500 /* RESTAPIProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814ED8C0299045910070D500 /* RESTAPIProtocol.swift */; };
+		814ED8D3299045910070D500 /* URLSession+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814ED8C4299045910070D500 /* URLSession+Ext.swift */; };
+		814ED8D8299046320070D500 /* SpaceDevsQueryResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814ED8D7299046320070D500 /* SpaceDevsQueryResponse.swift */; };
+		814ED8DA299049240070D500 /* RocketLaunch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814ED8D9299049240070D500 /* RocketLaunch.swift */; };
+		814ED8DC2990493C0070D500 /* LaunchServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814ED8DB2990493B0070D500 /* LaunchServiceProvider.swift */; };
+		814ED8DE2990494B0070D500 /* LaunchMission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814ED8DD2990494B0070D500 /* LaunchMission.swift */; };
+		814ED8E02990495F0070D500 /* LaunchStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814ED8DF2990495F0070D500 /* LaunchStatus.swift */; };
+		814ED8E22990496B0070D500 /* LaunchProgram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814ED8E12990496B0070D500 /* LaunchProgram.swift */; };
+		814ED8E42990497D0070D500 /* Rocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814ED8E32990497D0070D500 /* Rocket.swift */; };
+		814ED8EB29904A360070D500 /* SpaceDevsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814ED8EA29904A360070D500 /* SpaceDevsService.swift */; };
+		814ED8EE29904EFF0070D500 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 814ED8ED29904EFF0070D500 /* Swinject */; };
+		814ED8F0299084A40070D500 /* Date+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814ED8EF299084A40070D500 /* Date+Ext.swift */; };
+		814ED8FF29908A320070D500 /* CustomScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814ED8FE29908A320070D500 /* CustomScrollView.swift */; };
+		814ED90129908A790070D500 /* ChildViewSizeReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814ED90029908A790070D500 /* ChildViewSizeReader.swift */; };
+		814ED9042990EC0B0070D500 /* LaunchesListScreenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814ED9032990EC0B0070D500 /* LaunchesListScreenModel.swift */; };
+		814ED90729918F4D0070D500 /* LaunchListTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814ED90629918F4D0070D500 /* LaunchListTile.swift */; };
+		81520B2F29924DA700F73AD6 /* Color+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81520B2E29924DA700F73AD6 /* Color+Ext.swift */; };
+		81520B31299250DE00F73AD6 /* LaunchesDatesRangeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81520B30299250DE00F73AD6 /* LaunchesDatesRangeModel.swift */; };
+		81520B342992542600F73AD6 /* LaunchDetailsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81520B332992542600F73AD6 /* LaunchDetailsScreen.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		814ED89A299040960070D500 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 814ED881299040920070D500 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 814ED888299040920070D500;
+			remoteInfo = NeontriRecApp;
+		};
+		814ED8A4299040960070D500 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 814ED881299040920070D500 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 814ED888299040920070D500;
+			remoteInfo = NeontriRecApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		814554492992F9C9002A6EB0 /* Neontri_Space_ChallengeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Neontri_Space_ChallengeTests.swift; sourceTree = "<group>"; };
+		8145544B2992FD6E002A6EB0 /* LaunchInfoSectionRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchInfoSectionRow.swift; sourceTree = "<group>"; };
+		8145544F2992FDDF002A6EB0 /* Publisher+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Publisher+Ext.swift"; sourceTree = "<group>"; };
+		814554512992FE16002A6EB0 /* URLSession_EraseDataPublisher+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession_EraseDataPublisher+Ext.swift"; sourceTree = "<group>"; };
+		814554532993000C002A6EB0 /* PhotoPlaceholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPlaceholder.swift; sourceTree = "<group>"; };
+		814554562993079A002A6EB0 /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
+		814ED889299040920070D500 /* Neontri-Space-Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Neontri-Space-Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		814ED88C299040920070D500 /* NeontriSpaceChallengeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeontriSpaceChallengeApp.swift; sourceTree = "<group>"; };
+		814ED88E299040920070D500 /* LaunchesListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesListScreen.swift; sourceTree = "<group>"; };
+		814ED890299040960070D500 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		814ED893299040960070D500 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		814ED899299040960070D500 /* Neontri-Space-ChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Neontri-Space-ChallengeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		814ED8A3299040960070D500 /* Neontri-Space-ChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Neontri-Space-ChallengeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		814ED8BF299045910070D500 /* BaseAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseAPI.swift; sourceTree = "<group>"; };
+		814ED8C0299045910070D500 /* RESTAPIProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RESTAPIProtocol.swift; sourceTree = "<group>"; };
+		814ED8C4299045910070D500 /* URLSession+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URLSession+Ext.swift"; sourceTree = "<group>"; };
+		814ED8D7299046320070D500 /* SpaceDevsQueryResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceDevsQueryResponse.swift; sourceTree = "<group>"; };
+		814ED8D9299049240070D500 /* RocketLaunch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketLaunch.swift; sourceTree = "<group>"; };
+		814ED8DB2990493B0070D500 /* LaunchServiceProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchServiceProvider.swift; sourceTree = "<group>"; };
+		814ED8DD2990494B0070D500 /* LaunchMission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchMission.swift; sourceTree = "<group>"; };
+		814ED8DF2990495F0070D500 /* LaunchStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchStatus.swift; sourceTree = "<group>"; };
+		814ED8E12990496B0070D500 /* LaunchProgram.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchProgram.swift; sourceTree = "<group>"; };
+		814ED8E32990497D0070D500 /* Rocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rocket.swift; sourceTree = "<group>"; };
+		814ED8EA29904A360070D500 /* SpaceDevsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceDevsService.swift; sourceTree = "<group>"; };
+		814ED8EF299084A40070D500 /* Date+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Ext.swift"; sourceTree = "<group>"; };
+		814ED8FE29908A320070D500 /* CustomScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomScrollView.swift; sourceTree = "<group>"; };
+		814ED90029908A790070D500 /* ChildViewSizeReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildViewSizeReader.swift; sourceTree = "<group>"; };
+		814ED902299090650070D500 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		814ED9032990EC0B0070D500 /* LaunchesListScreenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesListScreenModel.swift; sourceTree = "<group>"; };
+		814ED90629918F4D0070D500 /* LaunchListTile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchListTile.swift; sourceTree = "<group>"; };
+		81520B2E29924DA700F73AD6 /* Color+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Ext.swift"; sourceTree = "<group>"; };
+		81520B30299250DE00F73AD6 /* LaunchesDatesRangeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesDatesRangeModel.swift; sourceTree = "<group>"; };
+		81520B332992542600F73AD6 /* LaunchDetailsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchDetailsScreen.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		814ED886299040920070D500 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				814ED8EE29904EFF0070D500 /* Swinject in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		814ED896299040960070D500 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		814ED8A0299040960070D500 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		814554482992F9C9002A6EB0 /* Neontri-Space-ChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				814554492992F9C9002A6EB0 /* Neontri_Space_ChallengeTests.swift */,
+			);
+			path = "Neontri-Space-ChallengeTests";
+			sourceTree = "<group>";
+		};
+		8145544D2992FD9E002A6EB0 /* UI Components */ = {
+			isa = PBXGroup;
+			children = (
+				814554532993000C002A6EB0 /* PhotoPlaceholder.swift */,
+				814ED8FD29908A1C0070D500 /* Custom ScrollView */,
+			);
+			path = "UI Components";
+			sourceTree = "<group>";
+		};
+		8145545529930235002A6EB0 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				81520B30299250DE00F73AD6 /* LaunchesDatesRangeModel.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		814ED880299040920070D500 = {
+			isa = PBXGroup;
+			children = (
+				814ED88B299040920070D500 /* Neontri-Space-Challenge */,
+				814554482992F9C9002A6EB0 /* Neontri-Space-ChallengeTests */,
+				814ED88A299040920070D500 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		814ED88A299040920070D500 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				814ED889299040920070D500 /* Neontri-Space-Challenge.app */,
+				814ED899299040960070D500 /* Neontri-Space-ChallengeTests.xctest */,
+				814ED8A3299040960070D500 /* Neontri-Space-ChallengeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		814ED88B299040920070D500 /* Neontri-Space-Challenge */ = {
+			isa = PBXGroup;
+			children = (
+				814ED902299090650070D500 /* Info.plist */,
+				814ED88C299040920070D500 /* NeontriSpaceChallengeApp.swift */,
+				814ED9052990EC460070D500 /* Launches List Screen */,
+				81520B32299253C000F73AD6 /* Launch Details Screen */,
+				814ED8C5299045910070D500 /* Models */,
+				8145544D2992FD9E002A6EB0 /* UI Components */,
+				814ED8BD299045910070D500 /* APIs */,
+				814ED8C1299045910070D500 /* Extensions */,
+				8145545529930235002A6EB0 /* Helpers */,
+				814ED890299040960070D500 /* Assets.xcassets */,
+				814ED892299040960070D500 /* Preview Content */,
+			);
+			path = "Neontri-Space-Challenge";
+			sourceTree = "<group>";
+		};
+		814ED892299040960070D500 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				814ED893299040960070D500 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		814ED8BD299045910070D500 /* APIs */ = {
+			isa = PBXGroup;
+			children = (
+				814ED8BF299045910070D500 /* BaseAPI.swift */,
+				814ED8C0299045910070D500 /* RESTAPIProtocol.swift */,
+				814ED8EA29904A360070D500 /* SpaceDevsService.swift */,
+			);
+			path = APIs;
+			sourceTree = "<group>";
+		};
+		814ED8C1299045910070D500 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				814ED8C4299045910070D500 /* URLSession+Ext.swift */,
+				814554512992FE16002A6EB0 /* URLSession_EraseDataPublisher+Ext.swift */,
+				8145544F2992FDDF002A6EB0 /* Publisher+Ext.swift */,
+				814ED8EF299084A40070D500 /* Date+Ext.swift */,
+				814554562993079A002A6EB0 /* String+Ext.swift */,
+				81520B2E29924DA700F73AD6 /* Color+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		814ED8C5299045910070D500 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				814ED8D7299046320070D500 /* SpaceDevsQueryResponse.swift */,
+				814ED8D9299049240070D500 /* RocketLaunch.swift */,
+				814ED8DB2990493B0070D500 /* LaunchServiceProvider.swift */,
+				814ED8E12990496B0070D500 /* LaunchProgram.swift */,
+				814ED8DD2990494B0070D500 /* LaunchMission.swift */,
+				814ED8DF2990495F0070D500 /* LaunchStatus.swift */,
+				814ED8E32990497D0070D500 /* Rocket.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		814ED8FD29908A1C0070D500 /* Custom ScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				814ED8FE29908A320070D500 /* CustomScrollView.swift */,
+				814ED90029908A790070D500 /* ChildViewSizeReader.swift */,
+			);
+			path = "Custom ScrollView";
+			sourceTree = "<group>";
+		};
+		814ED9052990EC460070D500 /* Launches List Screen */ = {
+			isa = PBXGroup;
+			children = (
+				814ED88E299040920070D500 /* LaunchesListScreen.swift */,
+				814ED9032990EC0B0070D500 /* LaunchesListScreenModel.swift */,
+				814ED90629918F4D0070D500 /* LaunchListTile.swift */,
+				8145544B2992FD6E002A6EB0 /* LaunchInfoSectionRow.swift */,
+			);
+			path = "Launches List Screen";
+			sourceTree = "<group>";
+		};
+		81520B32299253C000F73AD6 /* Launch Details Screen */ = {
+			isa = PBXGroup;
+			children = (
+				81520B332992542600F73AD6 /* LaunchDetailsScreen.swift */,
+			);
+			path = "Launch Details Screen";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		814ED888299040920070D500 /* Neontri-Space-Challenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 814ED8AD299040960070D500 /* Build configuration list for PBXNativeTarget "Neontri-Space-Challenge" */;
+			buildPhases = (
+				814ED885299040920070D500 /* Sources */,
+				814ED886299040920070D500 /* Frameworks */,
+				814ED887299040920070D500 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Neontri-Space-Challenge";
+			packageProductDependencies = (
+				814ED8ED29904EFF0070D500 /* Swinject */,
+			);
+			productName = NeontriRecApp;
+			productReference = 814ED889299040920070D500 /* Neontri-Space-Challenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		814ED898299040960070D500 /* Neontri-Space-ChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 814ED8B0299040960070D500 /* Build configuration list for PBXNativeTarget "Neontri-Space-ChallengeTests" */;
+			buildPhases = (
+				814ED895299040960070D500 /* Sources */,
+				814ED896299040960070D500 /* Frameworks */,
+				814ED897299040960070D500 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				814ED89B299040960070D500 /* PBXTargetDependency */,
+			);
+			name = "Neontri-Space-ChallengeTests";
+			productName = NeontriRecAppTests;
+			productReference = 814ED899299040960070D500 /* Neontri-Space-ChallengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		814ED8A2299040960070D500 /* Neontri-Space-ChallengeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 814ED8B3299040960070D500 /* Build configuration list for PBXNativeTarget "Neontri-Space-ChallengeUITests" */;
+			buildPhases = (
+				814ED89F299040960070D500 /* Sources */,
+				814ED8A0299040960070D500 /* Frameworks */,
+				814ED8A1299040960070D500 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				814ED8A5299040960070D500 /* PBXTargetDependency */,
+			);
+			name = "Neontri-Space-ChallengeUITests";
+			productName = NeontriRecAppUITests;
+			productReference = 814ED8A3299040960070D500 /* Neontri-Space-ChallengeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		814ED881299040920070D500 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					814ED888299040920070D500 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					814ED898299040960070D500 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 814ED888299040920070D500;
+					};
+					814ED8A2299040960070D500 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 814ED888299040920070D500;
+					};
+				};
+			};
+			buildConfigurationList = 814ED884299040920070D500 /* Build configuration list for PBXProject "Neontri-Space-Challenge" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 814ED880299040920070D500;
+			packageReferences = (
+				814ED8EC29904EFF0070D500 /* XCRemoteSwiftPackageReference "Swinject" */,
+			);
+			productRefGroup = 814ED88A299040920070D500 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				814ED888299040920070D500 /* Neontri-Space-Challenge */,
+				814ED898299040960070D500 /* Neontri-Space-ChallengeTests */,
+				814ED8A2299040960070D500 /* Neontri-Space-ChallengeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		814ED887299040920070D500 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				814ED894299040960070D500 /* Preview Assets.xcassets in Resources */,
+				814ED891299040960070D500 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		814ED897299040960070D500 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		814ED8A1299040960070D500 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		814ED885299040920070D500 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				814ED8EB29904A360070D500 /* SpaceDevsService.swift in Sources */,
+				814ED8E02990495F0070D500 /* LaunchStatus.swift in Sources */,
+				814ED8E42990497D0070D500 /* Rocket.swift in Sources */,
+				814ED8D8299046320070D500 /* SpaceDevsQueryResponse.swift in Sources */,
+				814ED8CF299045910070D500 /* BaseAPI.swift in Sources */,
+				814554522992FE16002A6EB0 /* URLSession_EraseDataPublisher+Ext.swift in Sources */,
+				81520B2F29924DA700F73AD6 /* Color+Ext.swift in Sources */,
+				814ED88F299040920070D500 /* LaunchesListScreen.swift in Sources */,
+				814ED8DE2990494B0070D500 /* LaunchMission.swift in Sources */,
+				814554542993000C002A6EB0 /* PhotoPlaceholder.swift in Sources */,
+				814ED8D3299045910070D500 /* URLSession+Ext.swift in Sources */,
+				814ED90129908A790070D500 /* ChildViewSizeReader.swift in Sources */,
+				814ED90729918F4D0070D500 /* LaunchListTile.swift in Sources */,
+				81520B342992542600F73AD6 /* LaunchDetailsScreen.swift in Sources */,
+				814ED88D299040920070D500 /* NeontriSpaceChallengeApp.swift in Sources */,
+				8145544C2992FD6E002A6EB0 /* LaunchInfoSectionRow.swift in Sources */,
+				814554572993079A002A6EB0 /* String+Ext.swift in Sources */,
+				814ED9042990EC0B0070D500 /* LaunchesListScreenModel.swift in Sources */,
+				814ED8E22990496B0070D500 /* LaunchProgram.swift in Sources */,
+				814554502992FDDF002A6EB0 /* Publisher+Ext.swift in Sources */,
+				814ED8D0299045910070D500 /* RESTAPIProtocol.swift in Sources */,
+				814ED8FF29908A320070D500 /* CustomScrollView.swift in Sources */,
+				814ED8F0299084A40070D500 /* Date+Ext.swift in Sources */,
+				81520B31299250DE00F73AD6 /* LaunchesDatesRangeModel.swift in Sources */,
+				814ED8DC2990493C0070D500 /* LaunchServiceProvider.swift in Sources */,
+				814ED8DA299049240070D500 /* RocketLaunch.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		814ED895299040960070D500 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8145544A2992F9C9002A6EB0 /* Neontri_Space_ChallengeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		814ED89F299040960070D500 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		814ED89B299040960070D500 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 814ED888299040920070D500 /* Neontri-Space-Challenge */;
+			targetProxy = 814ED89A299040960070D500 /* PBXContainerItemProxy */;
+		};
+		814ED8A5299040960070D500 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 814ED888299040920070D500 /* Neontri-Space-Challenge */;
+			targetProxy = 814ED8A4299040960070D500 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		814ED8AB299040960070D500 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		814ED8AC299040960070D500 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		814ED8AE299040960070D500 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Neontri-Space-Challenge/Preview Content\"";
+				DEVELOPMENT_TEAM = KM42VYU5F9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Neontri-Space-Challenge/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Neontri_Space_Challenge;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tymoteuszstokarski.Neontri-Space-Challenge";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		814ED8AF299040960070D500 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Neontri-Space-Challenge/Preview Content\"";
+				DEVELOPMENT_TEAM = KM42VYU5F9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Neontri-Space-Challenge/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Neontri_Space_Challenge;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tymoteuszstokarski.Neontri-Space-Challenge";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		814ED8B1299040960070D500 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KM42VYU5F9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tymoteuszstokarski.Neontri-Space-ChallengeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Neontri-Space-Challenge.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Neontri-Space-Challenge";
+			};
+			name = Debug;
+		};
+		814ED8B2299040960070D500 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KM42VYU5F9;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tymoteuszstokarski.Neontri-Space-ChallengeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Neontri-Space-Challenge.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Neontri-Space-Challenge";
+			};
+			name = Release;
+		};
+		814ED8B4299040960070D500 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KM42VYU5F9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tymoteuszstokarski.Neontri-Space-ChallengeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Neontri-Space-Challenge";
+			};
+			name = Debug;
+		};
+		814ED8B5299040960070D500 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KM42VYU5F9;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tymoteuszstokarski.Neontri-Space-ChallengeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Neontri-Space-Challenge";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		814ED884299040920070D500 /* Build configuration list for PBXProject "Neontri-Space-Challenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				814ED8AB299040960070D500 /* Debug */,
+				814ED8AC299040960070D500 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		814ED8AD299040960070D500 /* Build configuration list for PBXNativeTarget "Neontri-Space-Challenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				814ED8AE299040960070D500 /* Debug */,
+				814ED8AF299040960070D500 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		814ED8B0299040960070D500 /* Build configuration list for PBXNativeTarget "Neontri-Space-ChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				814ED8B1299040960070D500 /* Debug */,
+				814ED8B2299040960070D500 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		814ED8B3299040960070D500 /* Build configuration list for PBXNativeTarget "Neontri-Space-ChallengeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				814ED8B4299040960070D500 /* Debug */,
+				814ED8B5299040960070D500 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		814ED8EC29904EFF0070D500 /* XCRemoteSwiftPackageReference "Swinject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swinject/Swinject";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		814ED8ED29904EFF0070D500 /* Swinject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 814ED8EC29904EFF0070D500 /* XCRemoteSwiftPackageReference "Swinject" */;
+			productName = Swinject;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 814ED881299040920070D500 /* Project object */;
+}
