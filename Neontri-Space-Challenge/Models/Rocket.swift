@@ -14,7 +14,6 @@ struct Rocket: Codable {
     
 }
 
-// MARK: - Configuration
 struct RocketConfiguration: Codable {
     
     let id: Int

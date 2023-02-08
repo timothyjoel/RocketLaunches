@@ -9,7 +9,8 @@ import Foundation
 
 struct LaunchMission: Codable {
     let id: Int
-    let name, description: String
+    let name: String
+    let description: String
     let type: String
     let orbit: LaunchStatus
 }

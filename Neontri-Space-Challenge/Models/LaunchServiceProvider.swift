@@ -11,13 +11,13 @@ struct Agency: Codable {
     let id: Int
     let url: String
     let name: String
-  //  let agencyType: AgencyType
+    let agencyType: AgencyType?
     
     enum CodingKeys: String, CodingKey {
         case id
         case url
         case name
-    //    case agencyType = "type"
+        case agencyType = "type"
     }
 }
 

@@ -18,7 +18,7 @@ struct RocketLaunch: Codable, Identifiable {
     let net: String
     let launchServiceProvider: Agency
     let rocket: Rocket
-    let mission: LaunchMission
+    let mission: LaunchMission?
     let webcastLive: Bool
     let image: String?
 

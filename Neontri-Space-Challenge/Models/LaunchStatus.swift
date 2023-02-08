@@ -11,5 +11,4 @@ struct LaunchStatus: Codable {
     let id: Int
     let name: String
     let abbrev: String
-    let description: String?
 }
