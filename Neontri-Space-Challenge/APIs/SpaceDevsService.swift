@@ -20,7 +20,8 @@ extension SpaceDevsServiceProtocol {
     }
     
     func fetchLaunches(startDate: Date, finishDate: Date) -> AnyPublisher<Result<SpaceDevsQueryResponse, API.SpaceDevsService.CustomError>, Never> {
-        get(endpoint: "launch/", queryItems: ["net__gte": startDate.convertToSpaceDevsDate(), "net__lte": finishDate.convertToSpaceDevsDate()])
+        get(endpoint: "launch/", queryItems: ["net__gte": startDate.convertedToSpaceDevsDateAsString,
+                                              "net__lte": finishDate.convertedToSpaceDevsDateAsString])
         .catchResponseErrors()
         .unwrapResultJSONFromAPI()
         .map { $0.data }

@@ -23,7 +23,7 @@ class LaunchesDatesRangeModel {
     }
     
     func updateDatesRangeForNextRequest() {
-        startDate = finishDate.nextDay
+        startDate = finishDate
         finishDate = startDate.getDateAhead(weeks: numberOfWeeksToLoadPerRequest)
     }
     

@@ -10,9 +10,13 @@ import Combine
 
 struct LaunchesListScreen: View {
     
-    @StateObject var screenModel = LaunchesListScreenModel(spaceDevsService: API.SpaceDevsService(),
-                                                           dateRange: LaunchesDatesRangeModel())
+    @StateObject var screenModel: LaunchesListScreenModel
     @State var selectedLaunch: RocketLaunch?
+    
+    init(screenModel: LaunchesListScreenModel = LaunchesListScreenModel(spaceDevsService: API.SpaceDevsService(),
+                                                                        dateRange: LaunchesDatesRangeModel())) {
+        self._screenModel = StateObject(wrappedValue: screenModel)
+    }
     
     var body: some View {
         NavigationStack {

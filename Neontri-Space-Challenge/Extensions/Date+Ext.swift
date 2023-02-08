@@ -9,12 +9,6 @@ import Foundation
 
 extension Date {
     
-    func convertToSpaceDevsDate() -> String {
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "yyyy-MM-dd'T'00:00:00'Z'"
-        return dateFormatter.string(from: self)
-    }
-    
     func getDateAhead(weeks: Int) -> Self {
         let calendar = Calendar.current
         return calendar.date(byAdding: .day, value: weeks * 7, to: self)!
@@ -25,9 +19,10 @@ extension Date {
         return calendar.date(byAdding: .day, value: days, to: self)!
     }
     
-    var nextDay: Self {
-        let calendar = Calendar.current
-        return calendar.date(byAdding: .day, value: 1, to: self)!
+    var convertedToSpaceDevsDateAsString: String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd'T'00:00:00'Z'"
+        return dateFormatter.string(from: self)
     }
     
     var calendarDateAsString: String {

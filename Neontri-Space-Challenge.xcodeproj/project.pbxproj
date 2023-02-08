@@ -141,6 +141,15 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		814554582993AB6D002A6EB0 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				814ED9052990EC460070D500 /* Launches List Screen */,
+				81520B32299253C000F73AD6 /* Launch Details Screen */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
 		814ED880299040920070D500 = {
 			isa = PBXGroup;
 			children = (
@@ -165,8 +174,7 @@
 			children = (
 				814ED902299090650070D500 /* Info.plist */,
 				814ED88C299040920070D500 /* NeontriSpaceChallengeApp.swift */,
-				814ED9052990EC460070D500 /* Launches List Screen */,
-				81520B32299253C000F73AD6 /* Launch Details Screen */,
+				814554582993AB6D002A6EB0 /* Screens */,
 				814ED8C5299045910070D500 /* Models */,
 				8145544D2992FD9E002A6EB0 /* UI Components */,
 				814ED8BD299045910070D500 /* APIs */,
